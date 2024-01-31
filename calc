@@ -1,0 +1,8 @@
+def calc(array, n1, n2):
+    if n1 >= 0 and n2 >= 0:
+        result = sum(array[n1 : n2])
+        print(result)
+    else:
+        print("borne négative")
+
+calc([2, 3, 3, 4], -1, 8)

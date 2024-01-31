@@ -1,0 +1,16 @@
+
+
+def computeJoinPoint(s1, s2):
+    ss1 = str(s1)
+    ss2 = str(s2)
+
+    for i in range(20000000):
+        for r1, r2 in zip(ss1, ss2):
+            s1 = s1 + int(r1)
+            s2 = s2 + int(r2)
+
+        if s1 == s2:
+            print(s1)
+            return s1
+
+computeJoinPoint(471, 480)
